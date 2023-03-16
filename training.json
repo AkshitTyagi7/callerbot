@@ -30,6 +30,12 @@
    },
    {
     "tag": 6,
+    "patterns": ["Caller: I need a plumber \nBot: Bot: Is this an emergency ? \nCaller: Caller: Yes","Caller: I need a plumber \nBot: Bot: Is this an emergency ? \nCaller: Caller: Yes it's and emergency \nBot: Well, you called the right place, we can definitely help you with that and send a technician to help you right away. What is your name? \nCaller: My name is Akshit \nBot: What is the exact address of where you need the service? \nCaller: My address is Los Angeles \nBot: Thank you, What is the best phone number to reach you at? \nCaller: My phone number is 983456021",
+    "Caller: I need a plumber \nBot: Bot: Is this an emergency ? \nCaller: Caller: Yes","Caller: I need a plumber \nBot: Bot: Is this an emergency ? \nCaller: Caller: Yes it's and emergency \nBot: Well, you called the right place, we can definitely help you with that and send a technician to help you right away. What is your name? \nCaller: My name is Akshit \nBot: What is the exact address of where you need the service? \nCaller: My address is Los Angeles \nBot: Thank you, What is the best phone number to reach you at? \nCaller: You can contact me at this number" ],
+    "responses": ["Technician will call with ETA shortly "]
+   },
+   {
+    "tag": 7,
     "patterns": ["price","Estimated Cost"],
     "responses": ["Our service call fee for Residential $49 and Commercial $89"]
    }

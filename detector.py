@@ -54,12 +54,11 @@ def guess(inputtext):
     ints=predict_class(inputtext)
     res=get_response(ints,intents)
     probability=float(ints[0]['probability'])
-    print(probability<=0.6)
-    if probability<=0.6:
-        print('generator excuted')
-        result=chatting.generate(inputtext)
-        print(result)
-        return result
+    print(probability)
+    # if probability<=0.6:
+    #     print('generator excuted')
+    #     result=chatting.generate(inputtext)
+    #     print(result)
+    #     return result
     print(res)
     return(res)
-guess('Caller: We need a plumber')
