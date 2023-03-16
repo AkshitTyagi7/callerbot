@@ -1,6 +1,6 @@
 import json
 from fastapi import Request, FastAPI
-
+import detector
 from fastapi.middleware.cors import CORSMiddleware
 import chatting
 app = FastAPI()
@@ -21,7 +21,7 @@ async def read_root(request: Request):
         payload = await request.json()
         print(payload['message'])
 
-        res = chatting.generate(payload['message'])
+        res = detector.guess(payload['message'])
         print('This is result')
         print(res)
         return {

@@ -1,0 +1,37 @@
+{"intents":[
+ {
+  "tag": 1,
+  "patterns": ["Caller: I need a plumber","Caller: I wonder if you have a plumber"],
+  "responses":[ "Is this an emergency ?"]
+ },
+ {
+  "tag": 2,
+  "patterns": ["\nBot: Is this an emergency ? \nCaller: Yes","Caller: I need a plumber,\nBot: Is this an emergency ? \nCaller: Yes"],
+  "responses": ["Well, you called the right place, we can definitely help you with that and send a technician to help you right away. What is your name?"]
+ },
+ {
+  "tag": 3,
+  "patterns": ["Caller: I need a plumber \nBot: Bot: Is this an emergency ? \nCaller: Caller: Yes","Caller: I need a plumber \nBot: Bot: Is this an emergency ? \nCaller: Caller: Yes it's and emergency \nBot: Well, you called the right place, we can definitely help you with that and send a technician to help you right away. What is your name? \nCaller: My name is Akshit" ],
+  "responses": ["Thank you, What is the best phone number to reach you at?"]
+ },
+
+   {
+    "tag": 4,
+    "patterns": ["Caller: I need a plumber \nBot: Bot: Is this an emergency ? \nCaller: Caller: Yes","Caller: I need a plumber \nBot: Bot: Is this an emergency ? \nCaller: Caller: Yes it's and emergency \nBot: Well, you called the right place, we can definitely help you with that and send a technician to help you right away. What is your name? \nCaller: My name is Akshit \nBot: Thank you, What is the best phone number to reach you at? \nBot: My number is 991023487292" 
+,"Caller: I need a plumber \nBot: Bot: Is this an emergency ? \nCaller: Caller: Yes","Caller: I need a plumber \nBot: Bot: Is this an emergency ? \nCaller: Caller: Yes it's and emergency \nBot: Well, you called the right place, we can definitely help you with that and send a technician to help you right away. What is your name? \nCaller: My name is Akshit \nBot: Thank you, What is the best phone number to reach you at? \nCaller: You can contact call me at 1243353643645"
+,"Caller: I need a plumber \nBot: Bot: Is this an emergency ? \nCaller: Caller: Yes","Caller: I need a plumber \nBot: Bot: Is this an emergency ? \nCaller: Caller: Yes it's and emergency \nBot: Well, you called the right place, we can definitely help you with that and send a technician to help you right away. What is your name? \nCaller: My name is Akshit \nBot: Thank you, What is the best phone number to reach you at? \nCaller: You can reach me at 1243353643645" ],
+    "responses": ["What is the exact address of where you need the service? "]
+   },
+   {
+    "tag": 5,
+    "patterns": ["Caller: I need a plumber \nBot: Bot: Is this an emergency ? \nCaller: Caller: Yes","Caller: I need a plumber \nBot: Bot: Is this an emergency ? \nCaller: Caller: Yes it's and emergency \nBot: Well, you called the right place, we can definitely help you with that and send a technician to help you right away. What is your name? \nCaller: My name is Akshit \nBot: What is the exact address of where you need the service? \nCaller: My address is Los Angeles",
+    "Caller: I need a plumber \nBot: Bot: Is this an emergency ? \nCaller: Caller: Yes","Caller: I need a plumber \nBot: Bot: Is this an emergency ? \nCaller: Caller: Yes it's and emergency \nBot: Well, you called the right place, we can definitely help you with that and send a technician to help you right away. What is your name? \nCaller: My name is Akshit \nBot: What is the exact address of where you need the service? \nCaller: I live near" ],
+    "responses": ["Thank you, What is the best phone number to reach you at?"]
+   },
+   {
+    "tag": 6,
+    "patterns": ["price","Estimated Cost"],
+    "responses": ["Our service call fee for Residential $49 and Commercial $89"]
+   }
+   
+]}

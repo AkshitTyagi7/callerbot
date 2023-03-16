@@ -21,4 +21,3 @@ def generate(text):
 
 
 
-generate('Caller: We need a plumber')
