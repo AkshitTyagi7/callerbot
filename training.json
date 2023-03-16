@@ -38,6 +38,11 @@
     "tag": 7,
     "patterns": ["price","Estimated Cost"],
     "responses": ["Our service call fee for Residential $49 and Commercial $89"]
+   },
+   {
+    "tag": 8,
+    "patterns": ["Hi","Hello"],
+    "responses": ["Thank you for calling Plumbing Services. This is assistant name How can I help you?"]
    }
    
 ]}
