@@ -1,0 +1,39 @@
+{"intents":[
+    {
+        "tag": 1,
+        "patterns": ["Caller: Hello","Caller: Hi"],
+        "responses":[ "Thank you for calling ASAP Plumbing, this is sharon how can i help you?"]
+    },
+    {
+        "tag": 2,
+        "patterns": ["Caller: hi I have a leak in my house and I need a plumber do you have anyone available ?"],
+        "responses":[ "Well, you called the right place, we can definitely help you with that and send a technician to help you right away. What is your name?"]
+       },
+       {
+        "tag": 3,
+        "patterns": ["Caller: hi I have a leak in my house and I need a plumber do you have anyone available ? \nBot: Well, you called the right place, we can definitely help you with that and send a technician to help you right away. What is your name?"],
+        "responses":[ "What is the best phone number to reach you at?just in case we get disconnected ?"]
+       },
+       {
+        "tag": 4,
+        "patterns": ["Caller: hi I have a leak in my house and I need a plumber do you have anyone available ? \nBot: Well, you called the right place, we can definitely help you with that and send a technician to help you right away. What is your name? \nBot: What is the best phone number to reach you at?just in case we get disconnected ?"],
+        "responses":[ "ok great, What is the exact address of where you need the service?also can you spell the street name ?"]
+       },
+       {
+        "tag": 5,
+        "patterns": ["Caller: hi I have a leak in my house and I need a plumber do you have anyone available ? \nBot: Well, you called the right place, we can definitely help you with that and send a technician to help you right away. What is your name? \nBot: What is the best phone number to reach you at?just in case we get disconnected ? \nBot: ok great, What is the exact address of where you need the service?also can you spell the street name"],
+        "responses":["ok great, i got it.  how soon do you need the service?Is this an emergency?or we can schedule an appointment ?"]
+       },
+       
+       {
+        "tag": 6,
+        "patterns": ["Caller: hi I have a leak in my house and I need a plumber do you have anyone available ? \nBot: Well, you called the right place, we can definitely help you with that and send a technician to help you right away. What is your name? \nBot: What is the best phone number to reach you at?just in case we get disconnected ? \nBot: ok great, What is the exact address of where you need the service?also can you spell the street name ? \nBot: ok great, i got it.  how soon do you need the service?Is this an emergency?or we can schedule an appointment ?"],
+        "responses":[ "ok no problem, i will send your information to the technician and he will call you  shortly , we do have a service call fee is 49$, that's for our technician to come out and inspect the situation, but as you go ahead with our service, the price of the service call will be deducted from the total, is that fine?"]
+       },
+       {
+        "tag": 7,
+        "patterns": ["Caller: hi I have a leak in my house and I need a plumber do you have anyone available ? \nBot: Well, you called the right place, we can definitely help you with that and send a technician to help you right away. What is your name? \nBot: What is the best phone number to reach you at?just in case we get disconnected ? \nBot: ok great, What is the exact address of where you need the service?also can you spell the street name ? \nBot: ok great, i got it.  how soon do you need the service?Is this an emergency?or we can schedule an appointment ? \nBot: ok no problem, i will send your information to the technician and he will call you  shortly , we do have a service call fee is 49$, that's for our technician to come out and inspect the situation, but as you go ahead with our service, the price of the service call will be deducted from the total, is that fine?" ],
+        "responses":[ "Alright, I have all the information I needed, the technician  will give you a call in the next 30 minutes, Please make sure to stay next to your phone. Alright ?"]
+       }
+
+]}

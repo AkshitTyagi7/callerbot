@@ -16,7 +16,7 @@ tensorflow.compat.v1.disable_eager_execution()
 lemmatizer=WordNetLemmatizer() #Lemmatizer will makes the word's like asking, asked to ask
 #Lemmatizer will be useful in speech to text 
 
-intents=json.loads((open('training.json')).read())# Here the program is reading the input training json file
+intents=json.loads((open('training2.json')).read())# Here the program is reading the input training json file
 
 words=[]
 classes=[]
@@ -35,6 +35,7 @@ words=[lemmatizer.lemmatize(word) for word in words if word not in ignore_letter
 words= sorted(set(words))
 print(words)
 classes=sorted(set(classes))
+print(classes)
 pickle.dump(words,open('words.pkl','wb'))
 pickle.dump(classes,open('classes.pkl','wb'))
 

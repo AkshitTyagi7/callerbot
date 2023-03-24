@@ -9,7 +9,7 @@ import speech_recognition as sr
 import chatting
 
 lemmatizer=WordNetLemmatizer()
-intents=json.loads((open('training.json')).read())
+intents=json.loads((open('training2.json')).read())
 
 words= pickle.load(open('words.pkl','rb'))
 classes=pickle.load(open('classes.pkl','rb'))
@@ -62,3 +62,5 @@ def guess(inputtext):
     #     return result
     print(res)
     return(res)
+
+guess('Caller: I need a plumber')
