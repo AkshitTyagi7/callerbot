@@ -2,7 +2,7 @@ import json
 from fastapi import Request, FastAPI
 import detector
 from fastapi.middleware.cors import CORSMiddleware
-import chatting
+import chatgpt
 app = FastAPI()
 
 origins = ["*"]
@@ -22,6 +22,17 @@ async def read_root(request: Request):
         print(payload['message'])
 
         res = detector.guess(payload['message'])
+        print('This is result')
+        print(res)
+        return {
+            'result': res
+        }
+@app.post("/chatgpt")
+async def read_root(request: Request):
+        payload = await request.json()
+        # print(payload['message'])
+
+        res = chatgpt.createresponse(payload['message'])
         print('This is result')
         print(res)
         return {
