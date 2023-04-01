@@ -6,7 +6,7 @@
     },
     {
         "tag": 2,
-        "patterns": ["Caller: hi I have a leak in my house and I need a plumber do you have anyone available ?"],
+        "patterns": ["Caller: hi I have a leak in my house and I need a plumber do you have anyone available ?","Caller: hi I need a plumber"],
         "responses":[ "Well, you called the right place, we can definitely help you with that and send a technician to help you right away. What is your name?"]
        },
        {
